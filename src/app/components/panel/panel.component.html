@@ -1,0 +1,11 @@
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary" routerLink="/posting/add">
+      İlan ekle
+    </button>
+    <button type="button" class="btn btn-primary">
+      İlanlar
+    </button>
+    <button type="button" class="btn btn-primary" *ngIf="getUser$ | async as User">
+      {{User.displayName}}
+    </button>
+  </div>

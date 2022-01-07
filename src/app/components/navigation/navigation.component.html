@@ -1,0 +1,28 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  </button>
+  <span>Emlak</span>
+  <span class="example-spacer"></span>
+
+  <button routerLink="/" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>home</mat-icon>
+  </button>
+
+  <div *ngIf="getUser$ | async as User;else notUser">
+
+    <button matTooltip="Panel"  routerLink="/panel"  mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>admin_panel_settings</mat-icon>
+    </button>
+    <button (click)="logout()" matTooltip="Çıkış yap" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </div>
+  <ng-template #notUser>
+    
+  <button routerLink="/login" matTooltip="Giriş yap"   mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>login</mat-icon>
+  </button>
+  </ng-template>
+
+  
+</mat-toolbar>

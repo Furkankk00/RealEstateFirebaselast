@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "emlak-f997f": {
+      "hosting": {
+        "RealEstateFirebase": [
+          "emlak-f997f"
+        ]
+      }
+    },
+    "emlakproject-30bc0": {
+      "hosting": {
+        "RealEstateFirebase": [
+          "emlakproject-30bc0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "emlakproject-30bc0"
+  }
+}

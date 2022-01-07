@@ -1,0 +1,41 @@
+
+<div class="container">
+    <h1 class="text-center text-dark mt-5 mb-5">İlanlar</h1>
+    <div class="row gx-5">
+        <div class="col-lg-4 mb-5" *ngFor="let posting of postings">
+            <div class="card h-100 shadow border-0">
+                <img class="card-img-top" src="{{posting.image}}" alt="...">
+                <div class="card-body p-4">
+                        <h3 class="card-title mb-3 fw-bold">
+                            {{posting.title}}
+                        </h3>
+                    <p class="card-text mb-0">
+                        {{posting.description}}
+                    </p>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                    <div class="d-flex align-items-end justify-content-between">
+                        <div class="d-flex align-items-center">
+                            
+                            <div class="small">
+                                
+                                <div class="text-dark">
+                                    Yer : {{posting.location}}
+                                </div>
+                                <div class="text-dark">
+                                    Fiyat : {{posting.price}}
+                                </div>
+                                <div class="text-dark">
+                                   Tel NO : {{posting.phoneNumber}}
+                                </div>
+                                <div>
+                                    M2 : {{posting.squareMeter}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
